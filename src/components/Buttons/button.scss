@@ -1,0 +1,6 @@
+$buttonsColor: #E0FFFF;
+.main-btn {
+    background: $buttonsColor;
+    border: 1px solid darken($buttonsColor, 20%);
+    padding: 15px 35px;
+}
