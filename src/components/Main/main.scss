@@ -1,6 +1,12 @@
+@import "../../scss/colors";
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    border-radius: 50px;
+    .logo {
+        width: 70%;
+    }
 }

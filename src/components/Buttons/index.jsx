@@ -8,7 +8,6 @@ const MainBtn = props => {
                 {mainBtnText}
             </button>
         )
-
 };
 
 

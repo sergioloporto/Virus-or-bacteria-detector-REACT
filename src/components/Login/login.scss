@@ -1,0 +1,25 @@
+@import "../../scss/colors";
+@import "../../scss/mixins";
+@import "../../scss/fonts";
+
+.login-box {
+    @include registerAndLogingBox;
+
+    label {
+        @include labels;
+    }
+
+    input {
+        @include inputBox;
+    }
+
+    .forgot-password-link {
+        text-transform: uppercase;
+        text-align: right;
+        color: darken($greendark, 40%);
+    }
+
+    .submit-btn {
+        @include buttons;
+    }
+}

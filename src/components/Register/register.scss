@@ -1,0 +1,18 @@
+@import "../../scss/colors";
+@import "../../scss/mixins";
+
+.register-box {
+    @include registerAndLogingBox;
+
+    label {
+        @include labels;
+    }
+
+    input {
+        @include inputBox;
+    }
+
+    .submit-btn {
+        @include buttons;
+    }
+}
