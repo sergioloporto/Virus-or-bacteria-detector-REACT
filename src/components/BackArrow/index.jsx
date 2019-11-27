@@ -1,12 +1,17 @@
 import React from 'react';
 import "./backarrow.scss"
+import {Link} from "react-router-dom";
 
 const BackArrow = () => {
-        return (
-            <div className="backarrow">
-                <i className="icon-undo"></i>
-            </div>
-        )
+    return (
+
+        <Link to="/">
+            <button className="backarrow">
+                <i className="icon-undo" />
+            </button>
+        </Link>
+
+    )
 };
 
 

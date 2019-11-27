@@ -1,7 +1,14 @@
 import React from 'react';
 import BackArrow from "./index";
-import { storiesOf } from "@storybook/react";
+import {storiesOf} from "@storybook/react";
+import {BrowserRouter, Switch} from "react-router-dom"
 
 storiesOf("BackArrow", module)
-    .add("default", () => <BackArrow />);
+    .add("default", () => (
+        <BrowserRouter>
+            <Switch>
+                <BackArrow />
+            </Switch>
+        </BrowserRouter>));
+
 

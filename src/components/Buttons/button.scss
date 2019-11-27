@@ -11,16 +11,28 @@
     justify-content: space-evenly;
     margin-top: 130px;
 
-    & > button {
-        width: 40%;
-        border: 2px solid darken($greenlight, 20%);
-        &:hover {
+    //& > button {
+    //    width: 40%;
+    //    border: 2px solid darken($greenlight, 20%);
+    //    &:hover {
+    //    background-color: darken($greenlight, 10%);
+    //    }
+    //    &:active {
+    //        background-color: darken($greenlight, 15%);
+    //        border-color: lighten($greenmedium, 15%);
+    //    }
+    //}
+}
+
+a button {
+    //width: 40%;
+    border: 2px solid darken($greenlight, 20%);
+    &:hover {
         background-color: darken($greenlight, 10%);
-        }
-        &:active {
-            background-color: darken($greenlight, 15%);
-            border-color: lighten($greenmedium, 15%);
-        }
+    }
+    &:active {
+        background-color: darken($greenlight, 15%);
+        border-color: lighten($greenmedium, 15%);
     }
 }
 
