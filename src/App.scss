@@ -1,13 +1,4 @@
 @import  "scss/reset";
 @import "scss/normalize";
-
-body {
-  background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(4, 254, 119, 1) 100%);
-}
-.root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto auto;
-}
+@import "scss/colors";
+@import "scss/mixins";

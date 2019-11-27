@@ -1,0 +1,36 @@
+@mixin buttons {
+    background: $greenlight;
+    border: 1px solid darken($greenlight, 20%);
+    padding: 13px 26px;
+    border-radius: 50px;
+    white-space: nowrap;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15)
+
+    //&:hover::after{
+    //    opacity: 1;
+    //}
+}
+@mixin labels {
+    text-transform: uppercase;
+    font-size: .9em;
+    color: #cc548e;
+}
+@mixin registerAndLogingBox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 90%;
+}
+@mixin inputBox {
+    background-color: unset;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 20px;
+    margin-bottom: 35px;
+}

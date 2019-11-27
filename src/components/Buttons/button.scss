@@ -1,6 +1,54 @@
-$buttonsColor: #E0FFFF;
+@import "../../scss/colors";
+@import "../../scss/mixins";
+
 .main-btn {
-    background: $buttonsColor;
-    border: 1px solid darken($buttonsColor, 20%);
-    padding: 15px 35px;
+    @include buttons;
 }
+
+.login-register-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 130px;
+
+    //& > button {
+    //    width: 40%;
+    //    border: 2px solid darken($greenlight, 20%);
+    //    &:hover {
+    //    background-color: darken($greenlight, 10%);
+    //    }
+    //    &:active {
+    //        background-color: darken($greenlight, 15%);
+    //        border-color: lighten($greenmedium, 15%);
+    //    }
+    //}
+}
+
+a button {
+    //width: 40%;
+    border: 2px solid darken($greenlight, 20%);
+    &:hover {
+        background-color: darken($greenlight, 10%);
+    }
+    &:active {
+        background-color: darken($greenlight, 15%);
+        border-color: lighten($greenmedium, 15%);
+    }
+}
+
+.main >  button:last-child {
+    background-color: $greenmedium;
+    border: 2px solid lighten($greenmedium, 20%);
+    &:hover {
+        background-color: darken($greenlight, 10%);
+    }
+    &:active {
+        background-color: lighten($greenmedium, 15%);
+        border-color: darken($greenlight, 30%);
+    }
+}
+
+.noregBtn {
+    background-color: $greenmedium;
+}
+

@@ -1,0 +1,50 @@
+@import "../../scss/colors";
+:root {
+    color: white;
+}
+body {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(4, 254, 119, 1) 100%);
+}
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+$containerHeight: 90vh;
+$containerWidth: ($containerHeight/2);
+.container {
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 50px;
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    //min-width: 350px;
+    border: 5px groove lightgrey;
+    width: $containerWidth;
+    height: $containerHeight;
+    transform: translate(0, 5%);
+    margin: auto auto;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border-radius: 50px;
+    .logo {
+        width: 70%;
+    }
+}
