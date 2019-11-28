@@ -1,14 +1,13 @@
 import React from 'react';
-import Login from "./index";
+import Checkbox from "./index";
 import { storiesOf } from "@storybook/react";
 import {BrowserRouter, Switch} from "react-router-dom";
 
-
-storiesOf("Login", module)
+storiesOf("Checkbox", module)
     .add("default", () => (
         <BrowserRouter>
             <Switch>
-                <Login />
+                <Checkbox />
             </Switch>
         </BrowserRouter>));
 

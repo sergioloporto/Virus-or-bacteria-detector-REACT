@@ -1,0 +1,86 @@
+@import "../../scss/colors";
+@import "../../scss/mixins";
+
+.checkboxLabel {
+    color: black;
+    height: 60px;
+    background: $white;
+    border-bottom: 1px solid $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 8px;
+    -webkit-box-shadow: inset -7px 6px 56px -48px rgba(0,0,0,0.59);
+    -moz-box-shadow: inset -7px 6px 56px -48px rgba(0,0,0,0.59);
+    box-shadow: inset -7px 6px 56px -48px rgba(0,0,0,0.59);
+    &:hover {
+        -webkit-box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
+        box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
+    }
+    //&:first-of-type {
+    //    border-top-left-radius: 15px;
+    //    border-top-right-radius: 15px;
+    //}
+    //&:last-of-type {
+    //    border-bottom-left-radius: 15px;
+    //    border-bottom-right-radius: 15px;
+    //}
+}
+.checkboxContainer {
+    font-family: 'system-ui';
+    display: flex;
+    flex-direction:column;
+    //padding:40px;
+}
+
+.radioboxLabel {
+    color: black;
+    height: 80px;
+    background: $white;
+    border-bottom: 1px solid $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 8px;
+    -webkit-box-shadow: inset -7px 6px 56px -48px rgba(0,0,0,0.59);
+    -moz-box-shadow: inset -7px 6px 56px -48px rgba(0,0,0,0.59);
+    box-shadow: inset -7px 6px 56px -48px rgba(0,0,0,0.59);
+    &:hover {
+        -webkit-box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
+        box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
+    }
+    //&:first-of-type {
+    //    border-top-left-radius: 30px;
+    //    border-top-right-radius: 30px;
+    //}
+    //&:last-of-type {
+    //    border-bottom-left-radius: 30px;
+    //    border-bottom-right-radius: 30px;
+    //}
+}
+.radioWrapper {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.resultbox {
+    color: black;
+    height: 60px;
+    background: $white;
+    border-bottom: 1px solid $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 40px;
+    -webkit-box-shadow: inset -7px 6px 56px -48px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: inset -7px 6px 56px -48px rgba(0, 0, 0, 0.59);
+    box-shadow: inset -7px 6px 56px -48px rgba(0, 0, 0, 0.59);
+}

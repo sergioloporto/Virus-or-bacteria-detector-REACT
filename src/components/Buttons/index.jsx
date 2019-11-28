@@ -12,3 +12,4 @@ const MainBtn = props => {
 
 
 export default MainBtn;
+
