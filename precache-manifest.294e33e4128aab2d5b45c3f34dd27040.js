@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3d323e89aa54bfde0a896acef2c2fcc2",
+    "revision": "c15a4b7fc2e991fa229f27edb238edef",
     "url": "/Virus-or-bacteria-detector-REACT/index.html"
   },
   {
-    "revision": "fea0f08ca9dbce570945",
-    "url": "/Virus-or-bacteria-detector-REACT/static/css/main.7c955913.chunk.css"
+    "revision": "a3106561445bb441bdb8",
+    "url": "/Virus-or-bacteria-detector-REACT/static/css/main.db402489.chunk.css"
   },
   {
-    "revision": "0f124a1e284e44dbb473",
-    "url": "/Virus-or-bacteria-detector-REACT/static/js/2.d4e8691a.chunk.js"
+    "revision": "901687eb8d05408c5c32",
+    "url": "/Virus-or-bacteria-detector-REACT/static/js/2.75dbf5e8.chunk.js"
   },
   {
-    "revision": "fea0f08ca9dbce570945",
-    "url": "/Virus-or-bacteria-detector-REACT/static/js/main.56caa0fe.chunk.js"
+    "revision": "a3106561445bb441bdb8",
+    "url": "/Virus-or-bacteria-detector-REACT/static/js/main.a6de7e55.chunk.js"
   },
   {
     "revision": "61241c718b38ad393c15",
