@@ -10,7 +10,7 @@ const Register = () => {
             <BackArrow />
             <form className="register-box">
                 <label htmlFor="input-email">Enter your email</label>
-                <input type="email" placeholder="Ye not actually appending a string but an object which is incorrect and hence you get [Object Object]our email address..." name="email" id="input-email" />
+                <input type="email" placeholder="Your email..." name="email" id="input-email" />
                 <label htmlFor="input-password">Choose a password</label>
                 <input type="password" placeholder="Password..." name="password" id="input-password" />
                 <label htmlFor="input-password-repeat">Repeat the password</label>

@@ -66,6 +66,8 @@ class DiagnoseTool extends Component {
                 theResult =   <p>Risk of GABHS pharingitis 28 tp 35% <br />Make culture or RADT test.<br /> If Positive, threat with antibiotics. <br /> If Negative, no antibiotics needed.<br /> Consult the doctor.</p>
             } else if  (this.state.points >= 4) {
                 theResult =   <p>Risk of GABHS pharingitis 51 to 53% <br />To threat with antibiotics.<br /> Consult the doctor.</p>
+            } else {
+                theResult = <p>The result of the calculation will be here</p>
             }
             return theResult;
     };
