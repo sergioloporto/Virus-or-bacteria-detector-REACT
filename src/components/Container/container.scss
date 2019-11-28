@@ -1,11 +1,14 @@
 @import "../../scss/colors";
+
 :root {
     color: white;
 }
+
 body {
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, white 0%, #fffbfb 100%)
 }
+
 .root {
     display: flex;
     justify-content: center;
@@ -13,14 +16,19 @@ body {
     margin: auto auto;
 }
 
-$containerHeight: 90vh;
-$containerWidth: ($containerHeight/2);
+//$containerHeight: 90vh;
+//$containerWidth: ($containerHeight/2);
+
+$containerHeight: 100vh;
+$containerWidth: 100vw;
+
+
 .container {
-    background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #f0f0eb, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #A1FFCE; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f0f0eb, #A1FFCE); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #f0f0eb, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    border-radius: 20px;
+    //border-radius: 20px;
     box-sizing: border-box;
     position: relative;
 
@@ -29,15 +37,15 @@ $containerWidth: ($containerHeight/2);
     flex-direction: column;
 
     //min-width: 350px;
-    border: 5px groove lightgrey;
+    //border: 5px groove lightgrey;
     width: $containerWidth;
     height: $containerHeight;
-    transform: translate(0, 5%);
+    //transform: translate(0, 5%);
     margin: auto auto;
 
-    -webkit-box-shadow: 35px 41px 105px -53px rgba(0,0,0,0.56);
-    -moz-box-shadow: 35px 41px 105px -53px rgba(0,0,0,0.56);
-    box-shadow: 35px 41px 105px -53px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 35px 41px 105px -53px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 35px 41px 105px -53px rgba(0, 0, 0, 0.56);
+    box-shadow: 35px 41px 105px -53px rgba(0, 0, 0, 0.56);
 }
 
 .main {
@@ -47,7 +55,32 @@ $containerWidth: ($containerHeight/2);
     align-items: center;
     height: 100%;
     border-radius: 50px;
-    .logo {
-        width: 70%;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+
+@media (min-width: 350px) {
+    .main {
+        padding: 0;
+        .logo {
+            width: 30%;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .main {
+        .logo {
+            width: 20%;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .main {
+        .logo {
+            width: 200px;
+        }
     }
 }

@@ -6,8 +6,6 @@ import LoginCheck from "../../Middleware/login";
 import { Redirect } from "react-router-dom";
 
 
-
-
 class Login extends Component {
     state = {
         email: "",
@@ -18,6 +16,8 @@ class Login extends Component {
         isLoginError: "",
         isLoginSuccess: false
     };
+
+
 
     handleInputChange = e => {
         this.setState({
@@ -53,8 +53,13 @@ class Login extends Component {
     render() {
         const { email, password, isPasswordValid, isEmailValid, isLoginError, isLoginSuccess } = this.state;
 
+            if (LoginCheck.returnTheUser()) {
+                return <Redirect to="/diagnose-tool" />
+            }
+
+
         if (isLoginSuccess) {
-            return <Redirect to="/" />
+            return <Redirect to="/diagnose-tool" />
         }
 
         return (
