@@ -49,24 +49,25 @@ class DiagnoseTool extends Component {
 
 // ADD THE RESULT
     addResult = () => {
+
+        const resultColor = {
+            backgroundColor: "orange"
+        };
+
+
         let theResult;
-        // if (this.state.radioAge !== "") {
             if (this.state.points <= 0 && this.state.radioAge) {
-                theResult =  <p>Risk of GABHS pharingitis 1 to 2.5%</p>
+                theResult =  <p>Risk of GABHS pharingitis 1 to 2.5% <br />No further antibiotics or testing needed<br /> Consult the doctor.</p>
             } else if (this.state.points === 1) {
-                theResult =   <p>Risk of GABHS pharingitis 5 to 10%</p>
+                theResult =   <p>Risk of GABHS pharingitis 5 to 10%<br />Make culture or RADT test.<br /> If Positive, threat with antibiotics. <br /> If Negative, no antibiotics needed.<br /> Consult the doctor.</p>
             } else if (this.state.points === 2) {
-                theResult =   <p>Risk of GABHS pharingitis 11 tp 17%</p>
+                theResult =   <p>Risk of GABHS pharingitis 11 tp 17% <br />Make culture or RADT test.<br /> If Positive, threat with antibiotics. <br /> If Negative, no antibiotics needed.<br /> Consult the doctor.</p>
             } else if (this.state.points === 3) {
-                theResult =   <p>Risk of GABHS pharingitis 28 tp 35%</p>
+                theResult =   <p>Risk of GABHS pharingitis 28 tp 35% <br />Make culture or RADT test.<br /> If Positive, threat with antibiotics. <br /> If Negative, no antibiotics needed.<br /> Consult the doctor.</p>
             } else if  (this.state.points >= 4) {
-                theResult =   <p>Risk of GABHS pharingitis 51 to 53%</p>
+                theResult =   <p>Risk of GABHS pharingitis 51 to 53% <br />To threat with antibiotics.<br /> Consult the doctor.</p>
             }
             return theResult;
-        // } else return null
-
-
-
     };
 
 // PERRFORM THE CALCULATION
