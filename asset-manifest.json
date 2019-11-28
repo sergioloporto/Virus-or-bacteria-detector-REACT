@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Virus-or-bacteria-detector-REACT/static/css/main.7c955913.chunk.css",
+    "main.js": "/Virus-or-bacteria-detector-REACT/static/js/main.c0b97456.chunk.js",
+    "main.js.map": "/Virus-or-bacteria-detector-REACT/static/js/main.c0b97456.chunk.js.map",
+    "runtime-main.js": "/Virus-or-bacteria-detector-REACT/static/js/runtime-main.57768d70.js",
+    "runtime-main.js.map": "/Virus-or-bacteria-detector-REACT/static/js/runtime-main.57768d70.js.map",
+    "static/js/2.d4e8691a.chunk.js": "/Virus-or-bacteria-detector-REACT/static/js/2.d4e8691a.chunk.js",
+    "static/js/2.d4e8691a.chunk.js.map": "/Virus-or-bacteria-detector-REACT/static/js/2.d4e8691a.chunk.js.map",
+    "index.html": "/Virus-or-bacteria-detector-REACT/index.html",
+    "precache-manifest.49d934186154b68d27a0b8c465897795.js": "/Virus-or-bacteria-detector-REACT/precache-manifest.49d934186154b68d27a0b8c465897795.js",
+    "service-worker.js": "/Virus-or-bacteria-detector-REACT/service-worker.js",
+    "static/css/main.7c955913.chunk.css.map": "/Virus-or-bacteria-detector-REACT/static/css/main.7c955913.chunk.css.map",
+    "static/media/backarrow.scss": "/Virus-or-bacteria-detector-REACT/static/media/fontello.f2089db8.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57768d70.js",
+    "static/js/2.d4e8691a.chunk.js",
+    "static/css/main.7c955913.chunk.css",
+    "static/js/main.c0b97456.chunk.js"
+  ]
+}
