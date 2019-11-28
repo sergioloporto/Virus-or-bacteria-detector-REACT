@@ -15,7 +15,8 @@ class DiagnoseTool extends Component {
         temperature: false,
         tonsillarex: false,
         points: 0,
-        radioAge: ""
+        radioAge: "",
+        wasBtnClicked: false
     };
 
 // CHECKBOX
@@ -38,6 +39,11 @@ class DiagnoseTool extends Component {
     onButtonClick = e => {
         e.preventDefault();
         this.calculate();
+
+        this.setState({
+            wasBtnClicked: true
+        })
+
     };
 
 
@@ -46,15 +52,15 @@ class DiagnoseTool extends Component {
         let theResult;
         // if (this.state.radioAge !== "") {
             if (this.state.points <= 0 && this.state.radioAge) {
-                theResult =  <p>Risk of GABHS pharingitis <br/>1 to 2.5%</p>
+                theResult =  <p>Risk of GABHS pharingitis 1 to 2.5%</p>
             } else if (this.state.points === 1) {
-                theResult =   <p>Risk of GABHS pharingitis <br/>5 to 10%</p>
+                theResult =   <p>Risk of GABHS pharingitis 5 to 10%</p>
             } else if (this.state.points === 2) {
-                theResult =   <p>Risk of GABHS pharingitis <br/>11 tp 17%</p>
+                theResult =   <p>Risk of GABHS pharingitis 11 tp 17%</p>
             } else if (this.state.points === 3) {
-                theResult =   <p>Risk of GABHS pharingitis <br/>28 tp 35%</p>
+                theResult =   <p>Risk of GABHS pharingitis 28 tp 35%</p>
             } else if  (this.state.points >= 4) {
-                theResult =   <p>Risk of GABHS pharingitis <br/>51 to 53%</p>
+                theResult =   <p>Risk of GABHS pharingitis 51 to 53%</p>
             }
             return theResult;
         // } else return null
@@ -96,7 +102,7 @@ class DiagnoseTool extends Component {
 
 
     render() {
-        const {cough, nodes, temperature, tonsillarex, radioAge} = this.state;
+        const {cough, nodes, temperature, tonsillarex, radioAge, wasBtnClicked} = this.state;
         return (
             <Container>
                 <BackArrow />
@@ -165,31 +171,12 @@ class DiagnoseTool extends Component {
                     </section>
 
 
-                    <p className="resultbox">
+                    <div className="resultbox">
                     {
-                        (radioAge) && this.addResult()
+                        (wasBtnClicked) && this.addResult()
                     }
-                    </p>
+                    </div>
 
-
-                    {/*{*/}
-                    {/*    (this.state.points <= 0 && radioAge) &&*/}
-                    {/*    <p className="checkboxLabel">Risk of GABHS pharingitis 1 to 2.5%</p>*/}
-                    {/*}*/}
-                    {/*{*/}
-                    {/*    (this.state.points === 1) && <p className="checkboxLabel">Risk of GABHS pharingitis 5 to 10%</p>*/}
-                    {/*}*/}
-                    {/*{*/}
-                    {/*    (this.state.points === 2) &&*/}
-                    {/*    <p className="checkboxLabel">Risk of GABHS pharingitis 11 tp 17%</p>*/}
-                    {/*}*/}
-                    {/*{*/}
-                    {/*    (this.state.points === 3) &&*/}
-                    {/*    <p className="checkboxLabel">Risk of GABHS pharingitis 28 tp 35%</p>*/}
-                    {/*}*/}
-                    {/*{*/}
-                    {/*    (this.state.points >= 4) && <p className="checkboxLabel">Risk of GABHS pharingitis 51 to 53%</p>*/}
-                    {/*}*/}
 
                 </div>
 
