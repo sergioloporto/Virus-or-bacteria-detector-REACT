@@ -19,20 +19,11 @@
         -moz-box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
         box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
     }
-    //&:first-of-type {
-    //    border-top-left-radius: 15px;
-    //    border-top-right-radius: 15px;
-    //}
-    //&:last-of-type {
-    //    border-bottom-left-radius: 15px;
-    //    border-bottom-right-radius: 15px;
-    //}
 }
 .checkboxContainer {
     font-family: 'system-ui';
     display: flex;
     flex-direction:column;
-    //padding:40px;
 }
 
 .radioboxLabel {
@@ -53,14 +44,7 @@
         -moz-box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
         box-shadow: inset -3px 0px 36px -23px rgba(0, 0, 0, 0.59);
     }
-    //&:first-of-type {
-    //    border-top-left-radius: 30px;
-    //    border-top-right-radius: 30px;
-    //}
-    //&:last-of-type {
-    //    border-bottom-left-radius: 30px;
-    //    border-bottom-right-radius: 30px;
-    //}
+
 }
 .radioWrapper {
     height: auto;
@@ -71,7 +55,7 @@
 
 .resultbox {
     color: black;
-    height: 60px;
+    height: 100px;
     background: $white;
     border-bottom: 1px solid $gray;
     display: flex;
