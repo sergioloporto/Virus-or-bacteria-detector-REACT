@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0711867d794d0ddf8171fe6e99feaebd",
+    "revision": "a8e6164fc41b12c3c9f38fedcfadf558",
     "url": "/Virus-or-bacteria-detector-REACT/index.html"
   },
   {
-    "revision": "4196f9a6b2d07a14e737",
+    "revision": "ebd1b2cc7f24253625b1",
     "url": "/Virus-or-bacteria-detector-REACT/static/css/main.7c955913.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Virus-or-bacteria-detector-REACT/static/js/2.d4e8691a.chunk.js"
   },
   {
-    "revision": "4196f9a6b2d07a14e737",
-    "url": "/Virus-or-bacteria-detector-REACT/static/js/main.c0b97456.chunk.js"
+    "revision": "ebd1b2cc7f24253625b1",
+    "url": "/Virus-or-bacteria-detector-REACT/static/js/main.e00b387a.chunk.js"
   },
   {
     "revision": "61241c718b38ad393c15",

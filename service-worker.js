@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Virus-or-bacteria-detector-REACT/precache-manifest.49d934186154b68d27a0b8c465897795.js"
+  "/Virus-or-bacteria-detector-REACT/precache-manifest.f38ce9727dfa9e54649f49f5bcd84269.js"
 );
 
 self.addEventListener('message', (event) => {
