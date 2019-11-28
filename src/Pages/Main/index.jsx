@@ -9,6 +9,9 @@ const Main = () => {
     const styles =  {
         justifyContent: "center"
     };
+    const specialClass  = {
+        backgroundColor: "yellow"
+    };
 
 
     return (
@@ -18,7 +21,7 @@ const Main = () => {
                         <Link to="/login"><MainBtn mainBtnText="Log in" /></Link>
                         <Link to="/register"><MainBtn mainBtnText="Register" /></Link>
             </div>
-            <MainBtn mainBtnText="Continue without registration" />
+            <Link to="/diagnose-tool"><MainBtn mainBtnText="Continue without registration" specialClass={specialClass} /></Link>
         </Container>
     )
 };

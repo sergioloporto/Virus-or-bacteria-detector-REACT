@@ -4,7 +4,7 @@
 }
 body {
     background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(4, 254, 119, 1) 100%);
+    background: radial-gradient(circle, white 0%, #fffbfb 100%)
 }
 .root {
     display: flex;
@@ -17,10 +17,10 @@ $containerHeight: 90vh;
 $containerWidth: ($containerHeight/2);
 .container {
     background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #f0f0eb, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f0f0eb, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    border-radius: 50px;
+    border-radius: 20px;
     box-sizing: border-box;
     position: relative;
 
@@ -35,6 +35,9 @@ $containerWidth: ($containerHeight/2);
     transform: translate(0, 5%);
     margin: auto auto;
 
+    -webkit-box-shadow: 35px 41px 105px -53px rgba(0,0,0,0.56);
+    -moz-box-shadow: 35px 41px 105px -53px rgba(0,0,0,0.56);
+    box-shadow: 35px 41px 105px -53px rgba(0,0,0,0.56);
 }
 
 .main {

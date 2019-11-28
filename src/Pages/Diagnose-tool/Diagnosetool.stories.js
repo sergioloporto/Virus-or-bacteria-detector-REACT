@@ -1,14 +1,14 @@
 import React from 'react';
-import Login from "./index";
+import DiagnoseTool from "./index";
 import { storiesOf } from "@storybook/react";
 import {BrowserRouter, Switch} from "react-router-dom";
 
 
-storiesOf("Login", module)
+storiesOf("Diagnosetool", module)
     .add("default", () => (
         <BrowserRouter>
             <Switch>
-                <Login />
+                <DiagnoseTool />
             </Switch>
         </BrowserRouter>));
 
