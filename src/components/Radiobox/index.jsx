@@ -8,7 +8,7 @@ const Radiobox = ({ name, labelText, ...props}) => (
     <Item className="radioboxLabel">
         <RadioButton type="radio" name={name} {...props} />
         <RadioButtonLabel />
-        <div>{labelText}</div>
+        <div className="radioboxText">{labelText}</div>
     </Item>);
 
 
