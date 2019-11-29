@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Virus or Bacteria detector 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.5-blue.svg?cacheSeconds=2592000" />
 </p>
 
 > An app to diagnose if an infection is viral or bacterical.
