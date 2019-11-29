@@ -10,7 +10,9 @@ The tool is also available here: https://distracted-elion-064c0f.netlify.com/
 
 ## Notes
 Login writes the logged in user to localStorage.
+
 New features to be added: registration mechanism to localStorage and then migration to Firebase
+When ready -> refactoring
 
 
 ## Install
