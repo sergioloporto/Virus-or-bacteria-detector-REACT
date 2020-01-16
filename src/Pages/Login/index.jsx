@@ -4,7 +4,8 @@ import Container from "../../components/Container";
 import BackArrow from "../../components/BackArrow";
 import LoginCheck from "../../Middleware/login";
 import { Redirect } from "react-router-dom";
-
+import { connect } from "react-redux";
+import { setLoginSuccess } from "../../store/actions/userActions"
 
 class Login extends Component {
     state = {
@@ -14,7 +15,7 @@ class Login extends Component {
         isEmailValid: true,
         isPasswordValid: true,
         isLoginError: "",
-        isLoginSuccess: false
+        // isLoginSuccess: false
     };
 
 
@@ -40,7 +41,7 @@ class Login extends Component {
         if (isFormValid === true) {
             this.setState({ isFormClicked:true });
 
-            LoginCheck.isValidUser(email, password).then(res => this.setState({isLoginSuccess:true}) ).catch(err => {
+            LoginCheck.isValidUser(email, password).then(res => this.props.dispatch(setLoginSuccess(true))).catch(err => {
                 this.setState({isLoginError: "Username or Password are wrong, please try again"})
             });
         }
@@ -51,7 +52,8 @@ class Login extends Component {
 
 
     render() {
-        const { email, password, isPasswordValid, isEmailValid, isLoginError, isLoginSuccess } = this.state;
+        const { email, password, isPasswordValid, isEmailValid, isLoginError } = this.state;
+        const {isLoginSuccess} = this.props;
 
             if (LoginCheck.returnTheUser()) {
                 return <Redirect to="/diagnose-tool" />
@@ -110,6 +112,11 @@ class Login extends Component {
         )
     }
 }
+const mapStateToProps = (state) =>{
 
+    return {
+        isLoginSuccess : state.userReducer.isLoginSuccess
+    }
+}
 
-export default Login;
+export default connect(mapStateToProps)(Login) ;
